@@ -5,7 +5,7 @@ import sqlite3
 
 
 def get_token_link(app_id=7738389, scope=4):
-    """Возвращает URL: строку для полкчения токена VK и пытается открыть браузер с этой строкой"""
+    """Возвращает URL: строку для получения токена VK и пытается открыть браузер с этой строкой"""
     url = f'https://oauth.vk.com/authorize?client_id={app_id}&scope={scope}&' + \
           'redirect_uri=https://oauth.vk.com/blank.html&display=page&response_type=token&revoke=1'
 
